@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="images/Logo-color-linear-small.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="stylesheets/style_contact.css">
+    <link rel="stylesheet" href="stylesheets/global_nav.css">
+    <link rel="stylesheet" href="stylesheets/global_scrollbar.css">
+    <link rel="stylesheet" href="stylesheets/global_Header.css">
+    <link rel="stylesheet" href="stylesheets/global_footer.css">
+
+    <script src="js/MouseScrollNav.js"></script>
+    <title>聯絡我們 · ContactUs</title>
+</head>
+<body>
+
+    <!--#region Nav-->
+    <nav id="navbar">
+        <a href="index.html" target="_self" class="nav-logo">
+            <img src="images/Company-large.png" alt="YeuTay-Logo.png">
+        </a>
+        <div class="nav-link-group">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" target="_self" class="nav-link">About</a>
+            <a href="service.html" target="_self" class="nav-link">Services</a>
+            <a href="#" target="_self" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <!-- #endregion -->
+
+    <div class="container">
+
+        <!--#region Header-->
+        <header>
+            <div class="bg" style="background-image: url(images/contact-header-bg.png); filter: blur(3px) contrast(.7) saturate(.8);"></div>
+            
+            <div class="header-nav-padding"></div>
+
+            <div class="header-title-text">
+                <h1>聯絡我們</h1>
+                <h2>CONTACT US</h2>
+            </div>
+        </header>
+        <!-- #endregion -->
+
+        <!-- #region Slogan-->
+        <div class="contact-slogan">
+            <p class="cn">感謝您造訪羽泰精密科技有限公司，若有任何疑問，歡迎與我們聯繫</p>
+            <p class="en">Thanks for visiting our site, if you have any questions, please contact us.</p>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region Contact-->
+        <div class="contact">
+            <div class="bg" style="background-image: url(images/work.jpg); filter: blur(3px) brightness(.8);"></div>
+            <div class="contact-flexbox">
+                <div class="contact-information">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.888254391134!2d121.31996221500498!3d24.969916284002434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681ec4f243f141%3A0xd2e30c4da469c389!2zMzM05qGD5ZyS5biC5YWr5b635Y2A5ZKM5bmz6LevMTQ0MeW3tzIy5byEMeiZnw!5e0!3m2!1szh-TW!2stw!4v1631869523665!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+
+                    <h3>羽泰精密科技有限公司</h3>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        <span>03-363-5488</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-fax"></i>
+                        <span>03-363-4578</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        <span>allenwu@yeutay.com.tw</span>
+                    </p>
+                </div>
+
+                <div class="contact-form">
+                    <input type="text" name="email" placeholder="Your Email" id="mail" class="input-name">
+                    <input type="text" name="subject" placeholder="Subject" id="subject" class="input-subject">
+                    <textarea placeholder="Message..." id="message" class="input-message"></textarea>
+                    <a href="#" class="contact-submit" id="submitButton" onclick="SubmitTo()">Submit</a>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+
+    </div>
+
+    <!--#region Footer-->
+    <footer>
+        <div class="footer-container">
+            <a href="index.html" target="_self" class="footer-logo">
+                <img src="images/Company-large.png" alt="YeuTay-Logo-Name.png">
+            </a>
+
+            <div class="footer-buttons-container">
+                <a href="#" title="Facebook">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+            </div>
+
+            <p class="footer-contact">
+                <span class="footer-contact-address">
+                    334桃園市八德區和平路1441巷22弄1號
+                </span>
+                <br>
+                TEL: 03-363-5488  FAX: 03-363-4578
+                <br>
+                Email: <a href="mailto:allenwu@yeutay.com.tw" title="Email">allenwu@yeutay.com.tw</a>
+            </p>
+        </div>
+    </footer>
+    <!-- #endregion -->
+    
+    <script src="js/Contact_Submit_MailTo.js"></script>
+</body>
+</html>

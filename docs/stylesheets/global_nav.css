@@ -1,0 +1,139 @@
+/*#region Original*/
+
+/*Based on html - font-size: 10px*/
+
+nav{
+    margin: 0;
+    padding: 3rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(59, 68, 80, .5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .3);
+    transition: top .3s;
+}
+.nav-logo{
+    margin-left: 10rem;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    max-width: 100%;
+    height: auto;
+}
+.nav-link-group{
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-link{
+    color: #f1f2f6;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5rem;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    padding: .3rem 1rem;
+    border-radius: 5px;
+}
+.nav-link:hover{
+    transition: .3s linear;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+
+}
+
+/*#endregion*/
+
+/*#region RWD-IPadPro-Portrait*/
+
+@media only screen and (orientation: portrait) and (max-width: 1200px){
+    .nav-logo{
+        margin: 0;
+        margin-left: 5rem;
+        max-width: 30%;
+    }
+    .nav-link-group{
+        margin: 0;
+        margin-right: 5rem;
+    }
+    .nav-link{
+        margin-left: 2.5rem;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-IPad-Portrait*/
+
+@media only screen and (orientation: portrait) and (max-width: 769px){
+    .nav-link{
+        margin-left: 1.6rem;
+        font-size: 1.6rem;
+        padding: .2rem .8rem;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-IPad-Landscape*/
+
+@media only screen and (orientation: landscape) and (max-width: 1200px){
+    .nav-logo{
+        margin: 0;
+        margin-left: 5rem;
+        max-width: 30%;
+    }
+    .nav-link-group{
+        margin: 0;
+        margin-right: 5rem;
+    }
+    .nav-link{
+        margin-left: 2.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-Mobile-Portrait*/
+
+@media only screen and (orientation: portrait) and (max-width: 425px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-logo{
+        margin: 0;
+        margin-top: 3rem;
+        height: 4rem;
+        max-width: 50%;
+    }
+    .nav-link-group{
+        margin: 0;
+        margin-top: 3rem;
+    }
+    .nav-link{
+        margin: 0 1rem;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-Mobile-Landscape(Template)*/
+
+/*max-width and max-height because don't affect other RWD rules using max-width*/
+@media only screen and (max-width: 900px) and (max-height: 600px){}
+
+@media only screen and (max-width: 640px) and (max-height: 400px){}
+
+/*#endregion*/

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="images/Logo-color-linear-small.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="stylesheets/style_about.css">
+    <link rel="stylesheet" href="stylesheets/global_nav.css">
+    <link rel="stylesheet" href="stylesheets/global_scrollbar.css">
+    <link rel="stylesheet" href="stylesheets/global_Header.css">
+    <link rel="stylesheet" href="stylesheets/global_footer.css">
+
+    <script src="js/MouseScrollNav.js"></script>
+    <script src="js/HistorianButton.js"></script>
+    <title>關於羽泰 · AboutUs</title>
+</head>
+<body>
+    
+    <!--#region Nav-->
+    <nav id="navbar">
+        <a href="index.html" target="_self" class="nav-logo">
+            <img src="images/Company-large.png" alt="YeuTay-Logo.png">
+        </a>
+        <div class="nav-link-group">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" target="_self" class="nav-link">About</a>
+            <a href="service.html" target="_self" class="nav-link">Services</a>
+            <a href="contactus.html" target="_self" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <!-- #endregion -->
+
+    <div class="container">
+
+        <!-- #region Header-->
+        <header>
+            <div class="bg" style="background-image: url(images/about-header-bg.png); filter: blur(3px) brightness(.7);"></div>
+            
+            <div class="header-nav-padding"></div>
+
+            <div class="header-title-text">
+                <h1>關於羽泰</h1>
+                <h2>ABOUT US</h2>
+            </div>
+        </header>
+        <!-- #endregion -->
+
+        <!--About-Historian-scene-->
+        <div class="about">
+            <div class="bg"></div>
+
+            <!--#region About-->
+            <div class="about-content">
+                <div class="bg-cover"></div>
+
+                <h2 class="about-title">羽泰簡介</h2>
+
+                <div class="about-content-container">
+                    <div class="about-content-imgbox">
+                        <img src="images/Logo-color-linear-large.png" alt="Logo-color-linear-large.png">
+                    </div>
+
+                    <div class="about-content-textbox">
+                        <h3>
+                            堅守五大品質政策達成客戶需求
+                        </h3>
+                        <p>
+                            以誠信為原則、以品質為第一、以效率為優先、以服務為目的、以精良技術為基礎，永續經營的理念來達成客戶的需求。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+
+            <!--#region Historian-->
+            <div class="historian-content">
+                <h2 class="historian-title">公司沿革</h2>
+                <div class="historian-buttons-container">
+                    <div class="historian-button-backline"></div>
+
+                    <div class="historian-buttons-group">
+                        <button class="historian-button" onclick="HistorianButton(2004)">2004</button>
+                        <button class="historian-button" onclick="HistorianButton(2009)">2009</button>
+                        <button class="historian-button" onclick="HistorianButton(2011)">2011</button>
+                        <button class="historian-button" onclick="HistorianButton(2013)">2013</button>
+                        <button class="historian-button" onclick="HistorianButton(2017)">2017</button>
+                        <button class="historian-button" onclick="HistorianButton(2018)">2018</button>
+                        <button class="historian-button" onclick="HistorianButton(2020)">2020</button>
+                        <button class="historian-button" onclick="HistorianButton(2021)">2021</button>
+                    </div>
+                </div>
+
+                <div class="historian-content-content-container">
+                    <div class="historian-content-content">
+                        <h3 class="historian-year-text" id="year">2004</h3>
+                        <div class="historian-content-content-imgbox" id="imgBox" style="display: none;">
+                            <img id="pic" src="images/office.jpg" alt="Historian-img.jpg">
+                        </div>
+                        <p class="historian-content-content-text" id="info">
+                            公司創立。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hr-after-historian"></div>
+            </div>
+            <!-- #endregion -->
+
+            <!--#region 5S-->
+            <div class="yt5s-content">
+                <h2 class="yt5s-title">
+                    " 羽泰精密秉承5S原則，鞏固優良品質與效率 "
+                    <br>
+                    <span class="en">
+                        YEUTAY adheres to the 5S principle, always ensuring excellent quality and efficiency.
+                    </span>
+                </h2>
+                <ul class="yt5s-content-content">
+                    <li>整頓<br><span class="en">SEITON</span></li>
+                    <li>整理<br><span class="en">SEILI</span></li>
+                    <li>清掃<br><span class="en">SEISOA</span></li>
+                    <li>清潔<br><span class="en">SEIKETU</span></li>
+                    <li>教養<br><span class="en">SITUKE</span></li>
+                </ul>
+            </div>
+            <!-- #endregion -->
+        </div>
+
+        <!-- #region Footer-->
+        <footer>
+            <div class="footer-container">
+                <a href="index.html" target="_self" class="footer-logo">
+                    <img src="images/Company-large.png" alt="YeuTay-Logo-Name.png">
+                </a>
+    
+                <div class="footer-buttons-container">
+                    <a href="#" title="Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </div>
+    
+                <p class="footer-contact">
+                    <span class="footer-contact-address">
+                        334桃園市八德區和平路1441巷22弄1號
+                    </span>
+                    <br>
+                    TEL: 03-363-5488  FAX: 03-363-4578
+                    <br>
+                    Email: <a href="mailto:allenwu@yeutay.com.tw" title="Email">allenwu@yeutay.com.tw</a>
+                </p>
+            </div>
+        </footer>
+        <!-- #endregion -->
+
+    </div>
+
+</body>
+</html>

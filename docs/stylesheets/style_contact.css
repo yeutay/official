@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 10px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #747d8c;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*#region global*/
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -999;
+}
+
+/*#endregion*/
+
+/*#region Original*/
+
+/*#region Slogan*/
+
+.contact-slogan{
+    margin: 0;
+    padding: 5rem 3rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    color: #57606f;
+    background-color: #ffffff;
+    font-size: 2.4rem;
+}
+.contact-slogan .cn{
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 1px;
+}
+.contact-slogan .en{
+    letter-spacing: 1.5px;
+}
+
+/*#endregion*/
+
+/*#region Contact*/
+
+.contact{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10rem 0;
+    margin: 0;
+}
+.contact-flexbox{
+    width: 65%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.contact-information{
+    color: #f1f2f6;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.contact-information h3{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+.contact-information p{
+    font-size: 2rem;
+    margin: 1rem 0;
+    letter-spacing: 1.5px;
+}
+.contact-information .map{
+    width: 100%;
+    height: 35rem;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.contact-form .input-name, .contact-form .input-subject{
+    width: 100%;
+    height: 7rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #2f3542;
+}
+.contact-form .input-name:focus, .contact-form .input-subject:focus{
+    outline: none;
+}
+.contact-form .input-message{
+    display: block;
+    height: 30rem;
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #2f3542;
+    word-wrap: break-word;
+    overflow: auto;
+    resize: none;
+}
+.contact-form .input-message:focus{
+    outline: none;
+}
+.contact-submit{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #2f3542;
+    text-decoration: none;
+    background-color: #ffffff;
+    text-align: center;
+}
+.contact-submit:hover{
+    transition: .05s linear;
+    background-color: #ced6e0;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region RWD*/
+
+/*#region RWD-IPad-Pro-Portrait*/
+
+@media only screen and (orientation: portrait) and (max-width: 1200px){
+    html{
+        font-size: 8px;
+    }
+
+    /*#region Contact*/
+
+    .contact-flexbox{
+        width: 80%;
+    }
+
+    /*#endregion*/
+}
+
+/*#endregion*/
+
+/*#region RWD-IPad-Pro-Landscape*/
+
+@media only screen and (orientation: landscape) and (max-width: 1600px){
+    /*#region Contact*/
+
+    .contact-flexbox{
+        width: 75%;
+    }
+
+    /*#endregion*/
+}
+
+/*#endregion*/
+
+/*#region RWD-IPad-Portrait*/
+
+@media only screen and (orientation: portrait) and (max-width: 769px){
+    html{
+        font-size: 6px;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-IPad-Landscape*/
+
+@media only screen and (orientation: landscape) and (max-width: 1200px){
+    html{
+        font-size: 6px;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-Mobile-Portrait*/
+
+@media only screen and (orientation: portrait) and (max-width: 425px){
+    html{
+        font-size: 4px;
+    }
+
+    /*#region Slogan*/
+
+    .contact-slogan{
+        font-size: .5rem;
+        padding: 5rem;
+    }
+    
+    /*#endregion*/
+
+    /*#region Contact*/
+
+    .contact-flexbox{
+        width: 80%;
+        flex-direction: column;
+    }
+    .contact-information{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .contact-information h3{
+        font-size: 5rem;
+        margin-top: 4rem;
+    }
+    .contact-information .map{
+        height: 50rem;
+    }
+    .contact-form{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .contact-form .input-name, .contact-form .input-subject{
+        height: 10rem;
+        margin: 2rem 0;
+        padding: 2rem 4rem;
+    }
+    .contact-form .input-message{
+        height: 40rem;
+        margin: 4rem 0;
+        padding: 2rem 4rem;
+    }
+    .contact-submit{
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+
+    /*#endregion*/
+}
+
+/*#endregion*/
+
+/*#region RWD-Mobile-Landscape*/
+
+@media only screen and (orientation: landscape) and (max-width: 900px) and (max-height: 600px){
+    html{
+        font-size: 6px;
+    }
+}
+
+/*#endregion*/
+
+/*#region RWD-Smaller-Mobile-Landscape*/
+
+/*max-width and max-height because don't affect other RWD rules using max-width*/
+@media only screen and (orientation: landscape)  and (max-width: 640px) and (max-height: 400px){
+    html{
+        font-size: 6px;
+    }
+}
+
+/*#endregion*/
+
+/*#endregion*/
