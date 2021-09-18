@@ -225,6 +225,7 @@ body{
     background-color: #f1f2f6;
     background-position: center;
     background-size: cover;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
 }
 .services-text-container{
     width: 25vw;
