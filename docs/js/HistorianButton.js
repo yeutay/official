@@ -11,7 +11,7 @@ function HistorianButton(year){
             SetYearText(2009);
             SetEmptyImage();
             SetContentText(
-                "設立 <b><u>羽泰五股廠</u></b> (五股工業區)，<br>" +
+                "設立 <b><u>羽泰五股廠</u></b> (五股工業區)，" +
                 "並通過 ISO 9001-2008 驗證。"
             );
             break;
@@ -26,7 +26,7 @@ function HistorianButton(year){
             SetYearText(2013);
             SetEmptyImage();
             SetContentText(
-                "通過 <b>美國Walmat</b> 合格廠商認證 (2013~2015年)，<br>" +
+                "通過 <b>美國Walmat</b> 合格廠商認證 (2013~2015年)，" +
                 "並生產五金園藝及文具等相關生活用品。"
             );
             break;
@@ -41,7 +41,7 @@ function HistorianButton(year){
             SetYearText(2018);
             SetEmptyImage();
             SetContentText(
-                "成立塑膠射出成型廠、設立 <b><u>羽泰新莊廠</u></b>，<br>" +
+                "成立塑膠射出成型廠、設立 <b><u>羽泰新莊廠</u></b>，" +
                 "獲 <b>花仙子米奇</b> 拖把頭生產訂單。"
             );
             break;
@@ -57,9 +57,9 @@ function HistorianButton(year){
             SetEmptyImage();
             SetContentText(
                 "增設 <b>醫用口罩生產部</b> 並取得: <br>" +
-                "製造業醫療器材商許可執照 <b>桃字醫器製 字第MD6132000094號</b><br>" +
-                "衛生福利部第一等級醫療器材許可證 <b>衛部醫器製字第 9242號</b><br>" +
-                "販賣業藥商許可執照 <b>桃字藥販 字第 6232088592 號</b>"
+                "製造業醫療器材商許可執照 <br><b>桃字醫器製 字第MD6132000094號</b><br><br>" +
+                "衛生福利部第一等級醫療器材許可證 <br><b>衛部醫器製字第 9242號</b><br><br>" +
+                "販賣業藥商許可執照 <br><b>桃字藥販 字第 6232088592 號</b>"
             );
             break;
         default:
