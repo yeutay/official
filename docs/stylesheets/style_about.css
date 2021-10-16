@@ -39,7 +39,7 @@ body{
     padding: 0;
 }
 .about .bg{
-    background-image: url(../images/storage.jpg);
+    background-image: url(../images/webp/storage.webp);
     filter: blur(5px) brightness(.85);
     background-attachment: fixed;
 }

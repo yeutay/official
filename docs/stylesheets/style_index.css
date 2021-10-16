@@ -28,6 +28,12 @@ body{
     background-attachment: fixed;
     z-index: -999;
 }
+.cn{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.en{
+    font-family: 'Poppins', sans-serif;
+}
 
 /*#endregion*/
 
@@ -39,7 +45,7 @@ body{
     height: 100vh;
 }
 .home .bg{
-    background-image: url(../images/windows.jpg);
+    background-image: url(../images/webp/windows.webp);
     filter: brightness(.9) saturate(.8);
 }
 .home-content{
@@ -146,7 +152,7 @@ body{
     box-sizing: border-box;
 }
 .about .bg{
-    background-image: url(../images/office.jpg);
+    background-image: url(../images/webp/office.webp);
     filter: brightness(.7) saturate(.7) blur(8px);
 }
 .about-content{
@@ -215,7 +221,7 @@ body{
     flex-direction: row;
     position: relative;
     width: 55%;
-    margin: 0 auto;
+    margin: 3rem auto;
     justify-content: space-between;
 }
 .services-img-container{
@@ -282,6 +288,60 @@ body{
     background-color: #f1f2f6;
     opacity: .6;
     border-radius: 3px;
+}
+
+/*#endregion*/
+
+/*#region Services: Mask(Based on about container)*/
+
+.services-mask{
+    position: relative;
+    width: 55%;
+    margin: 5rem auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+.services-mask-container{
+    position: relative;
+    width: 100%;
+    padding: 7rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.services-mask-container .bg{
+    background-image: url(../images/webp/mask_with_desk.webp);
+    background-attachment: local;
+    background-position: center;
+    background-position-y: 55%;
+    filter: brightness(.7) contrast(.9) saturate(1.2);
+}
+.services-mask-content{
+    color: #f1f2f6;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+}
+.services-mask-content .cn{
+    font-size: 3.6rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.services-mask-content .en{
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+.services-mask-content h2{
+    margin-top: 0;
+}
+.services-mask-content p.cn{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 3rem 0;
+}
+.services-mask-content a.en{
+    color: #f1f2f6;
+    font-size: 2.2rem;
+    text-decoration: none;
+    border-bottom: 2px solid #f1f2f6;
 }
 
 /*#endregion*/
@@ -375,6 +435,14 @@ body{
     .services-title-hr{
         height: 4px;
         width: 10rem;
+    }
+
+    /*#endregion*/
+
+    /*#region Services: Mask*/
+
+    .services-mask{
+        width: 65%;
     }
 
     /*#endregion*/
@@ -478,6 +546,31 @@ body{
         display: inline-block;
         margin: 0 auto;
         margin-top: 5rem;
+    }
+
+    /*#endregion*/
+
+    /*#region Services: Mask*/
+
+    .services-mask{
+        width: 100%;
+        text-align: center;
+        margin: 12rem 0;
+    }
+    .services-mask-container .bg{
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(.6);
+    }
+    .services-mask-content h2 .en::before{
+        content: " | ";
+    }
+    .services-mask-content a.en{
+        margin-bottom: 1rem;
+    }
+    .hr-after-services{
+        display: none;
     }
 
     /*#endregion*/
@@ -596,6 +689,14 @@ body{
         margin-top: 1rem;
         margin-bottom: 3rem;
         opacity: .7;
+    }
+
+    /*#endregion*/
+
+    /*#region Services: Mask*/
+
+    .services-mask{
+        width: 70%;
     }
 
     /*#endregion*/
