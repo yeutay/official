@@ -44,6 +44,7 @@ body{
 .home .bg{
     background-image: url(../images/webp/windows.webp);
     filter: brightness(.9) saturate(.8);
+    background-attachment: local;
 }
 .home-content{
     text-align: center;
