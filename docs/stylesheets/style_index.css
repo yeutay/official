@@ -43,7 +43,7 @@ body{
 }
 .home .bg{
     background-image: url(../images/webp/windows.webp);
-    filter: brightness(.9) saturate(.8);
+    filter: brightness(.7) saturate(.8);
 }
 .home-content{
     text-align: center;
@@ -55,9 +55,9 @@ body{
 }
 .home-content-name-cn{
     color: #f1f2f6;
-    font-size: 4.8rem;
+    font-size: 6.2rem;
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 450;
+    font-weight: 600;
     letter-spacing: 1rem;
     margin: 0;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
@@ -66,7 +66,7 @@ body{
     color: #f1f2f6;
     font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1rem;
     margin: 0;
     margin-top: 1rem;
@@ -76,7 +76,7 @@ body{
     color: #f1f2f6;
     font-size: 2rem;
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 4px;
     line-height: 5rem;
     margin: 0;
@@ -150,7 +150,7 @@ body{
 }
 .about .bg{
     background-image: url(../images/webp/office.webp);
-    filter: brightness(.7) saturate(.7) blur(8px);
+    filter: brightness(.2) saturate(.7) blur(8px);
 }
 .about-content{
     position: relative;
