@@ -3,7 +3,6 @@
 }
 html{
     font-size: 10px;
-    height: 100%;
 }
 body{
     padding: 0;
@@ -44,7 +43,7 @@ body{
 }
 .home .bg{
     background-image: url(../images/webp/windows.webp);
-    background-size: cover;
+    background-size: cover;-webkit-background-size: cover;-o-background-size: cover;
     filter: brightness(.7) saturate(.8);
 }
 .home-content{
@@ -312,7 +311,7 @@ body{
 }
 .services-mask-container .bg{
     background-image: url(../images/webp/mask_with_desk.webp);
-    background-size: cover;
+    background-size: cover;-webkit-background-size: cover;-o-background-size: cover;
     background-attachment: local;
     background-position: center;
     background-position-y: 55%;
