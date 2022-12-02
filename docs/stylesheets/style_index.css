@@ -38,7 +38,7 @@ body{
 
 .home{
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 .home .bg{
@@ -310,6 +310,7 @@ body{
 }
 .services-mask-container .bg{
     background-image: url(../images/webp/mask_with_desk.webp);
+    width: auto;
     background-attachment: local;
     background-position: center;
     background-position-y: 55%;
