@@ -38,8 +38,8 @@ body{
 
 .home{
     position: relative;
-    max-width:100%;
-    height: 1024px;
+    max-width:100vh;
+    height: 100vh;
 }
 .home .bg{
     background-image: url(../images/webp/windows.webp);
